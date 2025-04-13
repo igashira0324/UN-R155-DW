@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx playwright-mcp-server",
+      "port": 3000
+    }
+  }
+}

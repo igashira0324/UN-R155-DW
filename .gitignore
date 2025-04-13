@@ -1,0 +1,6 @@
+node_modules/
+playwright-tests/downloads/
+test-results/
+.vscode/
+__pycache__/
+regulation_monitor.log

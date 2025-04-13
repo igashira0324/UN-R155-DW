@@ -1,0 +1,56 @@
+{
+    "sources": [
+        {
+            "name": "UN-R155",
+            "type": "unece",
+            "base_url": "https://unece.org/transport/documents",
+            "known_versions": [
+                {
+                    "url": "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security",
+                    "version": "original",
+                    "date": "2021-03",
+                    "last_hash": ""
+                },
+                {
+                    "url": "https://unece.org/transport/documents/2024/03/standards/un-regulation-no-155-amendment-2",
+                    "version": "amendment1",
+                    "date": "2022-11",
+                    "last_hash": ""
+                },
+                {
+                    "url": "https://unece.org/transport/documents/2022/11/standards/un-regulation-no-155-amend1-0",
+                    "version": "amendment1",
+                    "date": "2022-11",
+                    "last_hash": ""
+                },
+                {
+                    "url": "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security",
+                    "version": "original",
+                    "date": "2021-03",
+                    "last_hash": ""
+                }
+            ],
+            "search_patterns": [
+                "un-regulation-no-155",
+                "regulation-155",
+                "regulation.*155.*amendment",
+                "addendum.*154.*regulation.*155"
+            ]
+        }
+    ],
+    "notification": {
+        "email": {
+            "enabled": false,
+            "smtp_server": "smtp.example.com",
+            "smtp_port": 587,
+            "username": "your_email@example.com",
+            "password": "your_password",
+            "sender": "your_email@example.com",
+            "recipients": [
+                "recipient@example.com"
+            ]
+        }
+    },
+    "check_interval_hours": 24,
+    "log_file": "regulation_monitor.log"
+}
