@@ -1,10 +1,20 @@
 {
-  "dependencies": {
-    "@executeautomation/playwright-mcp-server": "^1.0.3"
+  "name": "unr155-downloader",
+  "version": "1.0.0",
+  "description": "Downloads the latest UN-R155 PDF",
+  "main": "electron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-packager . UN-R155Downloader --platform=win32 --arch=x64 --out=dist --overwrite"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.1",
-    "typescript": "^5.8.3"
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.11.24",
+    "electron": "^31.0.0",
+    "electron-packager": "^17.1.2",
+    "typescript": "^5.4.2"
   }
 }

@@ -15,6 +15,7 @@ UN-R155 PDF Downloader
 - ダウンロードしたファイルの整合性チェック
 - Ubuntu環境での実行をサポート
 - 毎日21:00に定期実行
+- Windowsアプリとして実行可能
 
 必要条件
 --------
@@ -30,10 +31,10 @@ Ubuntuへの展開
    sudo apt install nodejs npm
 
 2. GitHubからリポジトリをクローン:
-   git clone https://github.com/igashira0324/YOUR_REPOSITORY_NAME.git
+   git clone https://github.com/igashira0324/UN-R155-DW.git
 
 3. プロジェクトディレクトリに移動:
-   cd YOUR_REPOSITORY_NAME
+   cd UN-R155-DW
 
 4. 依存パッケージのインストール:
    npm install
@@ -49,6 +50,11 @@ Ubuntuへの展開
 ----------
 1. cronを設定:
    ./setup_cron.sh
+
+Windowsアプリとして実行
+---------------------
+1. dist\UN-R155Downloader-win32-x64\UN-R155Downloader.exe をダブルクリックして実行します。
+2. PDFファイルは、playwright-tests\downloads\に保存されます。
 
 使用方法
 -------
@@ -73,7 +79,7 @@ GitHubへの公開手順
 5. リモートリポジトリを設定:
    git remote add origin https://github.com/igashira0324/[リポジトリ名].git
 6. リポジトリをプッシュ:
-   git push -u origin main
+   git push -u origin master
 
 注意事項
 -------
@@ -91,3 +97,4 @@ GitHubへの公開手順
 4. Playwrightの設定
 5. cronが正しく設定されているか
 6. GitHubリポジトリの設定
+7. electron-packagerが正しくインストールされているか
