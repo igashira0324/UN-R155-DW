@@ -15,7 +15,7 @@ UN-R155 PDF Downloader
 - ダウンロードしたファイルの整合性チェック
 - Ubuntu環境での実行をサポート
 - 毎日21:00に定期実行
-- Windowsアプリとして実行可能
+- Windowsアプリとして実行可能（要PC再起動）
 
 必要条件
 --------
@@ -23,6 +23,7 @@ UN-R155 PDF Downloader
 - npm
 - Playwright
 - Git
+- PowerShell
 
 Ubuntuへの展開
 ------------
@@ -53,8 +54,11 @@ Ubuntuへの展開
 
 Windowsアプリとして実行
 ---------------------
-1. dist\UN-R155Downloader-win32-x64\UN-R155Downloader.exe をダブルクリックして実行します。
-2. PDFファイルは、playwright-tests\downloads\に保存されます。
+1. PowerShellスクリプト build.ps1 を使用して、exeファイルを作成します。
+   - PCを再起動後、PowerShellで build.ps1 を実行します。
+   - 実行には管理者権限が必要な場合があります。
+2. dist\UN-R155Downloader-win32-x64\UN-R155Downloader.exe をダブルクリックして実行します。
+3. PDFファイルは、playwright-tests\downloads\に保存されます。
 
 使用方法
 -------
@@ -98,3 +102,4 @@ GitHubへの公開手順
 5. cronが正しく設定されているか
 6. GitHubリポジトリの設定
 7. electron-packagerが正しくインストールされているか
+8. PowerShellが正しく設定されているか

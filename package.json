@@ -5,7 +5,7 @@
   "main": "electron.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-packager . UN-R155Downloader --platform=win32 --arch=x64 --out=dist --overwrite"
+    "package": "electron-packager . UN-R155Downloader --platform=win32 --arch=x64 --out=dist --overwrite --electronVersion=31.0.0"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "@playwright/test": "^1.42.0",
     "@types/node": "^20.11.24",
     "electron": "^31.0.0",
-    "electron-packager": "^17.1.2",
+    "@electron/packager": "^17.1.2",
     "typescript": "^5.4.2"
   }
 }
